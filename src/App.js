@@ -7,7 +7,9 @@ function App() {
       <header className="app-header">
         <h1 className="header-title">Statestreet React Challange</h1>
       </header>
-      <HomePage />
+      <div className="container">
+        <HomePage />
+      </div>
     </div>
   );
 }

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
 }
 
 code {
@@ -26,8 +27,19 @@ code {
   font-size: 20px;
 }
 
-.home-page {
+.container {
+  margin: 0 auto;
+  width: 1024px;
+  padding: 16px;
+}
+
+.home-page > div {
   width: 100%;
+  display: flex;
+}
+
+.home-page .title {
+  font-size: 18px;
 }
 
 .home-page table {
@@ -39,4 +51,28 @@ code {
 .home-page table th, .home-page table td {
   padding: 6px;
   border: 1px solid #ddd;
+}
+
+.filters {
+  width: 250px;
+}
+
+.filters h3 {
+  margin: 0 0 8px;
+}
+
+.filters > div {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 16px 0;
+  padding: 8px;
+}
+
+.filters > div h4 {
+  margin: 0 0 8px;
+}
+
+.table-container {
+  width: 100%;
 }
