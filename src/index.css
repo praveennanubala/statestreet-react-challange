@@ -25,3 +25,18 @@ code {
   color: #fff;
   font-size: 20px;
 }
+
+.home-page {
+  width: 100%;
+}
+
+.home-page table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.home-page table th, .home-page table td {
+  padding: 6px;
+  border: 1px solid #ddd;
+}

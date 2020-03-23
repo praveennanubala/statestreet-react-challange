@@ -1,4 +1,5 @@
 import React from 'react';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <header className="app-header">
         <h1 className="header-title">Statestreet React Challange</h1>
       </header>
+      <HomePage />
     </div>
   );
 }
