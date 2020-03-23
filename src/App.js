@@ -2,9 +2,9 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Statestreet React Challange</h1>
+    <div className="app">
+      <header className="app-header">
+        <h1 className="header-title">Statestreet React Challange</h1>
       </header>
     </div>
   );
