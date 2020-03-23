@@ -43,6 +43,16 @@ class HomePage extends Component {
         });
     }
 
+    handleTransactionClick = (event, selectedTransaction) => {
+        event.preventDefault();
+        this.props.history.push({
+            pathname: `/transaction/view/${selectedTransaction.account}`,
+            state: {
+                selectedTransaction
+            }
+        })
+    }
+
     render() {
         return (
             <div className="home-page">
@@ -64,7 +74,7 @@ class HomePage extends Component {
                             <tbody>
                                 {this.state.transactions.map((transaction) => (
                                     <tr key={transaction.account}>
-                                        <td>{transaction.account}</td>
+                                        <td><a href="" onClick={(event) => this.handleTransactionClick(event, transaction)}>{transaction.account}</a></td>
                                         <td>{transaction.accountName}</td>
                                         <td>{transaction.currencyCode}</td>
                                         <td>{transaction.amount}</td>

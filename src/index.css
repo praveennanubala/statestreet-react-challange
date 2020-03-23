@@ -76,3 +76,19 @@ code {
 .table-container {
   width: 100%;
 }
+
+.view-page h2{
+  font-size: 18px;
+}
+
+.view-page > div {
+  margin: 16px 0;
+}
+
+.view-page > div > small {
+  font-weight: 500;
+}
+
+.view-page > div >span {
+  font-weight: 300;
+}
